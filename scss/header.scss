@@ -1,0 +1,251 @@
+.header {
+	margin-bottom: 20px;
+}
+.logo {
+	display: inline-block;
+	img {
+		width: 224px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+.item-contact {
+	display: flex;
+	align-items: center;
+	color: #2A3848;
+	a {
+		color: #2A3848;	
+	}
+}
+.item-contact__icon {
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+.header__top {
+	padding-top: 4px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.phones-wrap {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 500;
+	position: relative;
+	a {
+		padding-right: 20px;
+		color: #2A3848;
+		position: relative;
+	}
+	&:hover {
+		.dropdown-phones {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+.dropdown-phones {
+	top: 100%;
+	left: 0;
+	padding: 15px 25px;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	white-space: nowrap;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px #d9e0ef;
+	border-radius: 8px;
+	z-index: 3;
+	transition: all 0.3s;
+	a {
+		padding-right: 0;
+	}
+}
+.phones-wrap__arrow {
+	width: 9px;
+	height: 4px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	background-image: url(../img/arrow_min.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.menu {
+	margin-top: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #F9FAFC;
+	border-radius: 8px;
+	> li {
+		position: relative;
+		> a {
+			line-height: 17px;
+			display: inline-block;
+			text-transform: uppercase;
+			font-weight: 500;
+			color: #000000;
+			padding: 21px 20px;
+			position: relative;
+			transition: all 0.3s;
+			&:hover {
+				background-color: #e5e6ea;
+			}
+		}
+		&:hover {
+			> a {
+				background-color: #e5e6ea;
+			}
+			ul {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+		&.menu__haschild {
+			> a {
+				padding-right: 40px;
+				&::after {
+					position: absolute;
+					display: block;
+					content: " ";
+					top: 0;
+					right: 10px;
+					bottom: 0;
+					margin: auto;
+					width: 24px;
+					height: 24px;
+					display: inline-block;
+					background-image: url(../img/arrow_menu.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+			}
+		}
+		&:first-child > a {
+			border-bottom-left-radius: 8px;
+			border-top-left-radius: 8px;
+		}
+		&:last-child > a {
+			border-bottom-right-radius: 8px;
+			border-top-right-radius: 8px;
+		}
+	}
+	ul {
+		padding: 5px 0;
+		top: 100%;
+		width: 100%;
+		min-width: 180px;
+		left: 0;
+		background: #FFFFFF;
+		box-shadow: 0 0 10px #d9e0ef;
+		border-radius: 8px;
+		z-index: 3;
+		transition: all 0.3s;
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		li {
+			a {
+				padding: 7px 15px;
+				border-bottom: 1px solid transparent;
+				display: block;
+				transition: all 0.3s;
+				color: #08090E;
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.05);
+				}
+			}
+		}
+	}
+}
+
+.btn_nav {
+	border: none;
+	z-index: 60;
+	display: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	vertical-align: middle;
+	position: relative;
+	&:hover {
+		opacity: 1;
+	} 
+}
+.sandwich {
+	width: 30px;
+	height:28px;
+	margin: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 20;
+	cursor: pointer;
+	span {
+		display: block;
+	}
+	&.active {
+		.sw-topper {
+			top: 12px;
+			transform: rotate(45deg);
+		}
+		.sw-bottom {
+			opacity: 0;
+		}
+		.sw-footer {
+			top:8px;
+			width: 30px;
+			transform: rotate(-45deg);
+		}
+	}
+}
+.sw-topper {
+	position: relative;
+	top: 4px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #2A3848;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	/* transition-delay: 0.2s, 0s; */
+}
+.sw-bottom {
+	position: relative;
+	top: 10px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	margin: 0 auto;
+	background-color: #2A3848;
+	border: medium none;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s;
+}
+.sw-footer {
+	position: relative;
+	top: 17px;
+	width: 29px;
+	height: 2px;
+	display: block;
+	background-color: #2A3848;
+	border: medium none;
+	transition: all 0.5s;
+	transition-delay: 0.1s;
+}

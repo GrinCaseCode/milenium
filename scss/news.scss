@@ -1,0 +1,31 @@
+.item-news__title {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 500;
+	margin-bottom: 24px;
+	color: #2A3848;
+	width: 100%;
+	display: block;
+}
+.item-news__date {
+	font-size: 12px;
+	line-height: 15px;
+	display: block;
+	margin-top: auto;
+	width: 100%;
+	opacity: 0.6;
+}
+.item-news {
+	padding: 20px;
+	border-radius: 14px;
+	display: flex;
+	color: #2A3848;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #F9FAFC;
+	min-height: 100%;
+	transition: all 0.3s;
+	&:hover {
+		box-shadow: 0 0 10px #d9e0ef;
+	}
+}

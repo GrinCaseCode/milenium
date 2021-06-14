@@ -1,0 +1,120 @@
+.item-recomendation {
+	height: 258px;
+	margin: 15px 15px;
+	position: relative;
+	background-color: #F9FAFC;
+	transition: all 0.3s;
+	border-radius: 8px;
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+		font-family: 'object-fit: cover;';
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.btn-main {
+		margin-top: auto;
+		height: 31px;
+		padding: 0 12px;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 15px;
+		background-color: #F9FAFC;
+	}
+	&:hover {
+		box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+		background-color: #fff;
+		.btn-main {
+			background-color: #EBD993;
+		}
+	}
+}
+.item-recomendation__content {
+	padding: 20px 16px;
+	padding-top: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: flex-start;
+}
+.item-recomendation__title {
+	font-weight: 500;
+}
+.arrows-right {
+	.slick-arrow {
+		top: -69px;
+		right: 15px;
+		left: auto;
+		transform: none;
+	}
+	.slick-prev {
+		right: 73px;
+	}
+}
+.slider-recomendations {
+	margin-top: -83px;
+	margin-bottom: -15px;
+}
+.progress {
+	display: block;
+	width: 250px;
+	height: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	top: -47px;
+	right: 130px;
+	position: absolute;
+	background-color: #F9FAFC;
+	background-image: linear-gradient(to right, #E5E9F2, #E5E9F2);
+	background-repeat: no-repeat;
+	background-size: 0 100%;
+	transition: background-size .4s ease-in-out;
+}
+.slider-wrap {
+	position: relative;
+}
+.swiper-scrollbar {
+	background: #F9FAFC;
+	border-radius: 2px;
+	width: 251px;
+	height: 4px;
+	margin-right: 21px;
+	.swiper-scrollbar-drag {
+		background: #E5E9F2;
+		border-radius: 2px;
+		height: 4px;
+		cursor: pointer;
+	}
+}
+.arrow-swiper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 47px;
+	height: 47px;
+	background: #f9fafc;
+	border-radius: 6px;
+	transition: all 0.3s;
+	&:hover {
+		background: #ebd993;
+	}
+}
+.swiper-controls {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.arrow-swiper_right {
+	margin-left: 8px;
+}

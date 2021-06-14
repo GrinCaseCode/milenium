@@ -1,0 +1,50 @@
+.slider-billbord .title-section {
+  padding: 0;
+  padding-bottom: 8px;
+  font-weight: 500; }
+.slider-billbord .slick-dots {
+  bottom: 108px;
+  left: 59px;
+  display: inline-block !important;
+  width: initial !important;
+  text-align: left; }
+.slider-billbord.slider-billbord_first .slick-dots {
+  opacity: 0; }
+.slider-billbord .btn-main {
+  height: 41px;
+  margin-top: 30px; }
+.slider-billbord .slick-prev {
+  left: -70px; }
+.slider-billbord .slick-next {
+  right: -70px; }
+
+.slider-billbord__item {
+  height: 516px;
+  border-radius: 14px;
+  position: relative;
+  overflow: hidden; }
+  .slider-billbord__item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    font-family: 'object-fit: cover;';
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .slider-billbord__item h2 {
+    padding: 0; }
+
+.slider-billbord__content {
+  position: absolute;
+  top: 129px;
+  left: 50px;
+  max-width: 550px;
+  width: 100%; }
+
+.btn-main_page {
+  background-color: #EBD993; }
+  .btn-main_page:hover {
+    background-color: #dfc55e; }
+
+/*# sourceMappingURL=billbord.css.map */
