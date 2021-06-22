@@ -46,6 +46,21 @@
 	.slider-billbord__content {
 		max-width: 535px;
 	}
+	.sidebar-page {
+		.item-sidebar {
+			padding: 8px;
+		}
+		.item-sidebar__head {
+			font-size: 15px;
+		}
+	}
+	.consultation {
+		.consult-form {
+			.item-form {
+				width: 200px;
+			}
+		}
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -267,6 +282,52 @@
 	.slider-recomendations {
 		margin-top: -67px;
 	}
+	.wrapper {
+		overflow: hidden;
+	}
+	.offer-block {
+		.offer-block__head {
+			.title-middle {
+				font-size: 19px;
+			}
+		}
+	}
+	.item-include {
+		margin-top: 20px;
+	}
+	.row_include {
+		margin-top: -15px;
+	}
+	.sidebar-page {
+		position: relative;
+		margin-top: 20px;
+		.item-sidebar {
+			padding: 15px;
+		}
+	}
+	.consultation {
+		.consultation__right {
+			justify-content: flex-start;
+		}
+		.consultation__descr {
+			padding-left: 0;
+		}
+	}
+	.product-block {
+		.product-block__price {
+			font-size: 26px;
+		}
+	}
+	.slider-docs {
+		padding-bottom: 30px;
+		.slick-dots li button {
+			background-color: #ebd993;
+			opacity: 0.5;
+		}
+		.slick-dots li.slick-active button {
+			opacity: 1;
+		}
+	}
 }
 
 /* Small Devices, Tablets */
@@ -322,6 +383,49 @@
 	}
 	.swiper-scrollbar {
 		display: none;
+	}
+	.offer-block {
+		.offer-block__content {
+			padding-left: 0;
+			padding-bottom: 15px;
+		}
+		.btn-main {
+			margin-top: 15px;
+		}
+	}
+	.slider-use {
+		padding-bottom: 30px;
+		.slick-dots li button {
+			background-color: #ebd993;
+			opacity: 0.5;
+		}
+		.slick-dots li.slick-active button {
+			opacity: 1;
+		}
+	}
+	.consultation {
+		.consultation__right {
+			display: block;
+		}
+		.wrap-messengers {
+			margin-top: 20px;
+			.link-messenger {
+				margin-left: 0;
+				justify-content: center;
+				margin-right: 20px;
+			}
+		}
+		.consult-form {
+			.item-form {
+				width: 300px;
+			}
+		}
+	}
+	.product-block {
+		.product-block__price {
+			line-height: 26px;
+			padding-top: 15px;
+		}
 	}
 }
 
@@ -456,6 +560,46 @@
 	}
 	.wrapper {
 		padding-top: 55px;
+	}
+	.breadcumbs {
+		font-size: 12px;
+	}
+	.offer-block {
+		margin-top: 20px;
+	}
+	.offer-block {
+		padding-right: 15px;
+		.btn-main {
+			padding: 0 18px;
+		}
+	}
+	.row_include > div {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.service {
+		h3 {
+			padding-top: 20px;
+		}
+	}
+	.consultation {
+		padding: 15px;
+		h3 {
+			padding-top: 0;
+		}
+		p {
+			font-size: 14px;
+		}
+		.wrap-messengers {
+			margin-top: 0;
+		}
+		.consult-form {
+			.item-form {
+				width: 200px;
+			}
+		}
 	}
 }
 

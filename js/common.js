@@ -29,7 +29,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		
 		if ($(".offer-block__content").is(":hidden")) {
-			$(this).html("Скрыть");
+			$(this).html("Скрыть предложение");
 			
 		} else {
 			$(this).html("Подробнее о предложении");
@@ -82,8 +82,51 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		responsive: [
 		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
 			breakpoint: 768,
 			settings: {
+				slidesToShow: 2,
+				dots: true,
+				arrows: false,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
+				arrows: false,
+			}
+		}
+		]
+	});
+
+	$('.slider-docs').slick({
+		arrows: true,
+		dots: false,
+		infinite: false,
+		touchThreshold: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+				dots: true,
+				arrows: false,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				dots: true,
 				arrows: false,
 			}
 		}
