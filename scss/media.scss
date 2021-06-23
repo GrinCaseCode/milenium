@@ -316,7 +316,7 @@
 	.slider-docs {
 		padding-bottom: 30px;
 		.slick-dots li button {
-			background-color: #ebd993;
+			background-color: #2A3848;
 			opacity: 0.5;
 		}
 		.slick-dots li.slick-active button {
@@ -399,8 +399,8 @@
 	.slider-use {
 		padding-bottom: 30px;
 		.slick-dots li button {
-			background-color: #ebd993;
-			opacity: 0.5;
+			background-color: #2A3848;
+			opacity: 0.6;
 		}
 		.slick-dots li.slick-active button {
 			opacity: 1;
@@ -430,8 +430,21 @@
 			padding-top: 15px;
 		}
 	}
+	.slick-dots {
+		padding-left: 15px;
+		text-align: left;
+	}
+}
+@media only screen and (max-width : 576px) {
+.block-products__right {
+	text-align: left;
+	.block-products__icon,
+	p {
+		display: none;
+	}
 }
 
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.slider-billbord__item {
@@ -461,31 +474,13 @@
 		}
 	}
 	.tabs {
-		white-space: nowrap;
-		flex-wrap: initial;
-		overflow: auto;
 		margin-right: -15px;
 		margin-bottom: 8px;
+		white-space: nowrap;
+		overflow: auto;
 		a {
 			padding: 0 29px;
 			background-color: #F9FAFC;
-		}
-		&::-webkit-scrollbar {
-			-webkit-appearance: none;
-		}
-		&::-webkit-scrollbar:vertical {
-			width: 0px;
-		}
-		&::-webkit-scrollbar:horizontal {
-			height: 0px;
-		}
-		&::-webkit-scrollbar-thumb {
-			background-color: transparent;
-			border-radius: 10px;
-		}
-		&::-webkit-scrollbar-track {
-			border-radius: 10px;
-			background-color: transparent;
 		}
 	}
 	.item-service {

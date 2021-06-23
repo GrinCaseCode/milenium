@@ -55,8 +55,7 @@ $(document).ready(function() {
 	});
 
 	//слайдер
-
-	$('.slider-billbord').slick({
+$('.slider-billbord').slick({
 		arrows: true,
 		dots: true,
 		infinite: false,
@@ -72,6 +71,26 @@ $(document).ready(function() {
 		}
 		]
 	});
+
+	$('.tabs').slick({
+		arrows: false,
+		dots: false,
+		infinite: false,
+		slidesToShow: 2,
+		touchThreshold: 1000,
+		focusOnSelect: false,
+		variableWidth: true,
+		slidesToScroll: 1,
+			mobileFirst: true,
+		responsive: [
+ 	{
+ 		breakpoint: 992,
+ 		settings: 'unslick'
+ 	}
+ 	]
+ });
+
+	
 
 	$('.slider-use').slick({
 		arrows: true,
@@ -238,7 +257,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
-		$(this).parent().parent().siblings(".tab-container").find(".tab-pane").fadeOut(0);
+		$(".tab-pane").fadeOut(0);
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(200);
 	});

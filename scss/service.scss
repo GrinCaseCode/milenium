@@ -118,11 +118,15 @@
 	font-size: 16px;
 	line-height: 24px;
 	background-color: #F9FAFC;
+	color: #2A3848;
+	transition: all 0.3s;
+	display: block;
 	border-radius: 14px;
 	.item-use__image {
 		height: 130px;
 		margin-bottom: 20px;
 		border-radius: 8px;
+		display: block;
 		img {
 			height: 100%;
 			width: 100%;
@@ -134,11 +138,17 @@
 			transition: all 0.3s;
 		}
 	}
+	.item-use__name {
+		display: block;
+	}
+	&:hover {
+		box-shadow: 0 0 10px #d9e0ef;
+	}
 }
 .slider-use {
 	margin: 0 -15px;
 	.item-use {
-		margin: 0 15px;
+		margin: 10px 15px;
 	}
 	.slick-prev {
 		left: -50px;
