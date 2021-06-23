@@ -481,6 +481,7 @@ h3,
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center; }
   .tabs li {
     margin-right: 30px; }
@@ -1550,6 +1551,7 @@ h3,
     margin-right: -15px;
     margin-bottom: 8px;
     white-space: nowrap;
+    display: block;
     overflow: auto; }
     .tabs a {
       padding: 0 29px;

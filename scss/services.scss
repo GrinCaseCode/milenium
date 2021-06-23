@@ -1,5 +1,6 @@
 .tabs {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	li {
 		margin-right: 30px;
